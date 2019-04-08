@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &154232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 443928}
+  - 114: {fileID: 11465490}
+  m_Layer: 0
+  m_Name: desert_def
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &443928
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154232}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1178.4886, y: 542.8954, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11465490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b51503567109143a7fe651ada533b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tile_set:
+  - desert_a
+  - desert_b
+  portal: {fileID: 176130, guid: 34700f339907fef44b8c37c0406b5326, type: 2}
+  items:
+  - {fileID: 168384, guid: f95884e0d40ed574cbffbdd039aa625c, type: 2}
+  - {fileID: 194830, guid: 8f57f7d67495c7240b044f29f20efed0, type: 2}
+  - {fileID: 122684, guid: 608eca56aaf390548b702749f5f297ca, type: 2}
+  - {fileID: 126684, guid: 3fda4b515353ce54d8288ba80f72d809, type: 2}
+  monsters:
+  - {fileID: 150442, guid: 9f68b1a8303adfd4fa02ef6f0f4f8177, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: items.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: monsters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[0]
+      value: 
+      objectReference: {fileID: 168384, guid: f95884e0d40ed574cbffbdd039aa625c, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[1]
+      value: 
+      objectReference: {fileID: 194830, guid: 8f57f7d67495c7240b044f29f20efed0, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[2]
+      value: 
+      objectReference: {fileID: 122684, guid: 608eca56aaf390548b702749f5f297ca, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[3]
+      value: 
+      objectReference: {fileID: 126684, guid: 3fda4b515353ce54d8288ba80f72d809, type: 2}
+    - target: {fileID: 0}
+      propertyPath: monsters.Array.data[0]
+      value: 
+      objectReference: {fileID: 150442, guid: 9f68b1a8303adfd4fa02ef6f0f4f8177, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 154232}
+  m_IsPrefabParent: 1

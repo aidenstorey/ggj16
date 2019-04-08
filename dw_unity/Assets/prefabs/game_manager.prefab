@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &124438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 414206}
+  - 114: {fileID: 11478492}
+  - 114: {fileID: 11499090}
+  - 114: {fileID: 11482574}
+  m_Layer: 0
+  m_Name: game_manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &414206
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11478492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df01f608da0ef04ba231a44b919c377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TileSize: 128
+  MoveSpeed: 0.05
+  EnemyDetectionRange: 10
+--- !u!114 &11482574
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a5a8600fa021144aabaa707c9bdbe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileSet:
+  - name: grass
+    flat: {fileID: 176856, guid: ccbc3b88b769c2a4795832fb73406fc4, type: 2}
+    blocked: []
+    side_left: {fileID: 132888, guid: 656ad7c487d82924787e13a32fb1a4b8, type: 2}
+    side_right: {fileID: 132888, guid: ac082c9bcb48f654890e7f96487ad4e8, type: 2}
+--- !u!114 &11499090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0517f772b5eab6f4a96c4a3b905a33d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  room_count: 100
+  room_radius: 1000
+  room_width_min: 25
+  room_width_max: 50
+  room_height_min: 25
+  room_height_max: 50
+  room_ratio_min: 1
+  room_ratio_max: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 124438}
+  m_IsPrefabParent: 1

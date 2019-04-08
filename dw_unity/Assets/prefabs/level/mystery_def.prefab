@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &143876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 477264}
+  - 114: {fileID: 11479528}
+  m_Layer: 0
+  m_Name: mystery_def
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &477264
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143876}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1178.4886, y: 542.8954, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11479528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b51503567109143a7fe651ada533b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tile_set:
+  - mystery
+  portal: {fileID: 186528, guid: aef1dc4c48b80d0469e542e1d133b542, type: 2}
+  items:
+  - {fileID: 122684, guid: 608eca56aaf390548b702749f5f297ca, type: 2}
+  - {fileID: 114200, guid: a715090f8e55de24bbb092425e075843, type: 2}
+  - {fileID: 126684, guid: 3fda4b515353ce54d8288ba80f72d809, type: 2}
+  - {fileID: 126816, guid: efb48396740f1db41af1dd74e4d42032, type: 2}
+  - {fileID: 142334, guid: 1b8d783229c036d428ec97aa047e1eeb, type: 2}
+  monsters:
+  - {fileID: 148024, guid: e403775574884894689deb3cc45e7f20, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: items.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: monsters.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[0]
+      value: 
+      objectReference: {fileID: 122684, guid: 608eca56aaf390548b702749f5f297ca, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[1]
+      value: 
+      objectReference: {fileID: 114200, guid: a715090f8e55de24bbb092425e075843, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[2]
+      value: 
+      objectReference: {fileID: 126684, guid: 3fda4b515353ce54d8288ba80f72d809, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[3]
+      value: 
+      objectReference: {fileID: 126816, guid: efb48396740f1db41af1dd74e4d42032, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[4]
+      value: 
+      objectReference: {fileID: 142334, guid: 1b8d783229c036d428ec97aa047e1eeb, type: 2}
+    - target: {fileID: 0}
+      propertyPath: monsters.Array.data[0]
+      value: 
+      objectReference: {fileID: 148024, guid: e403775574884894689deb3cc45e7f20, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 143876}
+  m_IsPrefabParent: 1
